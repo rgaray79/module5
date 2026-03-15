@@ -1,86 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Responsive HTML5 Template</title>
-    <meta name="description" content="A minimal responsive HTML5 starter template with external CSS." />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 5</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header" role="banner">
-        <div class="container header-inner">
-            <div class="brand">
-                <a href="/" aria-label="Home">Site Title</a>
-            </div>
-            <nav class="site-nav" role="navigation" aria-label="Main navigation">
-                <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-                <ul id="primary-menu" class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>Module 5</h1>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="main" class="site-main" role="main">
-        <section class="hero">
-            <div class="container">
-                <h1>Responsive HTML5 Template</h1>
-                <p>Lightweight, accessible, and mobile-first starter layout.</p>
-                <p><a class="btn" href="#">Get Started</a></p>
-            </div>
-        </section>
-
-        <div class="container layout">
-            <section class="content" aria-labelledby="content-heading">
-                <h2 id="content-heading">Main Content</h2>
-                <p>Use this area for your primary content. The layout is responsive and works well with an external stylesheet.</p>
-
-                <article class="card">
-                    <h3>Article Title</h3>
-                    <p>Sample article content. Replace this with your own text, images, or components.</p>
-                    <p><a href="#">Read more</a></p>
-                </article>
-            </section>
-
-            <aside class="sidebar" aria-label="Sidebar">
-                <h2>Sidebar</h2>
-                <ul>
-                    <li><a href="#">Related link 1</a></li>
-                    <li><a href="#">Related link 2</a></li>
-                    <li><a href="#">Related link 3</a></li>
-                </ul>
-            </aside>
-        </div>
+    <main>
+        <p>Welcome to Module 5.</p>
+        <button onclick="showAlert()">Click Me</button>
+        <script src="script.js"></script>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026</p>
     </footer>
-
-    <script>
-        // Small enhancement: toggle mobile nav
-        (function () {
-            var btn = document.querySelector('.nav-toggle');
-            var menu = document.getElementById('primary-menu');
-            if (!btn || !menu) return;
-            btn.addEventListener('click', function () {
-                var expanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', String(!expanded));
-                menu.classList.toggle('open');
-            });
-            // set current year in footer
-            var y = document.getElementById('year');
-            if (y) y.textContent = new Date().getFullYear();
-        })();
-    </script>
 </body>
 </html>

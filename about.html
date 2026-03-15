@@ -1,0 +1,96 @@
+
+<!doctype html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const a = document.createElement('a');
+            a.href = 'index.html';
+            a.className = 'return-link';
+            a.textContent = '← Back to index';
+            document.body.appendChild(a);
+        });
+</script>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+
+    <title>About — Ricardo Garay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+
+    <style>
+        :root { --bg:#f7f8fb; --card:#ffffff; --muted:#6b7280; --accent:#2563eb; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0f172a; }
+        body { margin:0; background:var(--bg); padding:40px; display:flex; justify-content:center; }
+        .container { max-width:900px; width:100%; }
+        .card { background:var(--card); border-radius:12px; padding:28px; box-shadow:0 6px 18px rgba(15,23,42,0.06); }
+        header { display:flex; gap:20px; align-items:center; margin-bottom:18px; }
+        .avatar { width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,#eef2ff,#e0f2fe); display:flex; align-items:center; justify-content:center; font-weight:700; color:#1e293b; font-size:28px; }
+        h1 { margin:0; font-size:20px; }
+        p.lead { margin:8px 0 18px; color:var(--muted); }
+        .meta { display:flex; gap:18px; flex-wrap:wrap; color:var(--muted); font-size:14px; }
+        section { margin-top:18px; }
+        .skills { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+        .skill { background:#eef2ff; color:#1e3a8a; padding:6px 10px; border-radius:999px; font-size:13px; }
+        .list { margin:8px 0 0; padding-left:18px; color:var(--muted); }
+        a.button { display:inline-block; margin-top:12px; background:var(--accent); color:#fff; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:14px; }
+        footer { margin-top:22px; color:var(--muted); font-size:13px; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <article class="card" aria-labelledby="about-title">
+            <header>
+                <div class="avatar" aria-hidden="true">RG</div>
+                <div>
+                    <h1 id="about-title">Ricardo Garay</h1>
+                    <p class="lead">Experienced full‑stack engineer building reliable, maintainable systems and delightful user experiences. Focused on clean code, test automation, and continuous delivery.</p>
+                    <div class="meta">
+                        <div>Location: Remote / Flexible</div>
+                        <div>Experience: 5+ years</div>
+                        <div>Open to: Backend, frontend, systems design</div>
+                    </div>
+                </div>
+            </header>
+
+            <section aria-labelledby="skills-heading">
+                <h2 id="skills-heading" style="font-size:16px;margin:0">Core skills</h2>
+                <div class="skills" role="list">
+                    <span class="skill" role="listitem">JavaScript / TypeScript</span>
+                    <span class="skill" role="listitem">React / Redux</span>
+                    <span class="skill" role="listitem">Node.js / Express</span>
+                    <span class="skill" role="listitem">Python</span>
+                    <span class="skill" role="listitem">Databases: PostgreSQL, MongoDB</span>
+                    <span class="skill" role="listitem">Testing: Jest, Cypress</span>
+                    <span class="skill" role="listitem">CI/CD, Docker, Kubernetes</span>
+                </div>
+            </section>
+
+            <section aria-labelledby="summary-heading">
+                <h2 id="summary-heading" style="font-size:16px;margin-top:18px">Professional summary</h2>
+                <p class="list">Practical experience designing microservices and REST/GraphQL APIs, optimizing performance, and mentoring teams. Comfortable translating product requirements into robust technical solutions and owning features end‑to‑end from design through production.</p>
+            </section>
+
+            <section aria-labelledby="projects-heading">
+                <h2 id="projects-heading" style="font-size:16px;margin-top:18px">Selected achievements</h2>
+                <ul class="list">
+                    <li>Led redesign of core platform API, reducing average response time by 40% and improving reliability.</li>
+                    <li>Built a reusable component library that accelerated UI development across multiple products.</li>
+                    <li>Introduced automated E2E testing and CI pipelines, cutting regressions and deployment risk.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="contact-heading">
+                <h2 id="contact-heading" style="font-size:16px;margin-top:18px">Contact</h2>
+                <p class="list">Email: <a href="mailto:you@example.com">rg@example.com</a></p>
+                <a class="button" href="#" download="resume.pdf">Download resume</a>
+            </section>
+
+            <footer>
+                Available for full‑time or contract roles. Portfolio and GitHub available on request.
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
