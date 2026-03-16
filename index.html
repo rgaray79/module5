@@ -1,26 +1,116 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module 5</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+
+        <style>
+        :root { --bg:#f7f8fb; --card:#ffffff; --muted:#6b7280; --accent:#2563eb; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0f172a; }
+        .container { max-width:900px; width:100%; }
+        .card { background:var(--card); border-radius:12px; padding:28px; box-shadow:0 6px 18px rgba(15,23,42,0.06); }
+        header { display:flex; gap:20px; align-items:center; margin-bottom:18px; }
+        .avatar { width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,#eef2ff,#e0f2fe); display:flex; align-items:center; justify-content:center; font-weight:700; color:#1e293b; font-size:28px; }
+        h1 { margin:0; font-size:20px; }
+        p.lead { margin:8px 0 18px; color:var(--muted); }
+        .meta { display:flex; gap:18px; flex-wrap:wrap; color:var(--muted); font-size:14px; }
+        section { margin-top:18px; }
+        .skills { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+        .skill { background:#eef2ff; color:#1e3a8a; padding:6px 10px; border-radius:999px; font-size:13px; }
+        .list { margin:8px 0 0; padding-left:18px; color:var(--muted); }
+        a.button { display:inline-block; margin-top:12px; background:var(--accent); color:#fff; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:14px; }
+        footer { margin-top:22px; color:var(--muted); font-size:13px; }
+    </style>
+
+
 </head>
 <body>
-    <header>
+    <header style="padding:24px; background:#f6f7fb; display:flex; flex-direction:column; align-items:center;">
         <h1>Module 5</h1>
-        <nav aria-label="Main navigation">
-            <ul class="nav-list">
+        <nav aria-label="Main navigation" style="margin-top:16px">
+            <ul class="nav-list" style="list-style:none;display:flex;gap:16px;padding:0;margin:0">
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <p>Welcome to Module 5.</p>
+    <main class="card" aria-labelledby="contactTitle">
+        <p>JavaScript example, click the button below:</p>
         <button onclick="showAlert()">Click Me</button>
-        <script src="script.js"></script>
+        <section style="margin-top:24px">
+            <h2>Course Content</h2>
+            <ol>
+                <li><strong>Module 1:</strong> HTML for Web Development</li>
+                <li><strong>Module 2:</strong> CSS for Web Development</li>
+                <li><strong>Module 3:</strong> Introduction to JavaScript for Interactivity</li>
+                <li><strong>Module 4:</strong> Version Control with GIT and GitHub</li>
+                <li><strong>Module 5:</strong> Using Microsoft Copilot for Writing HTML, CSS, and JavaScript</li>
+            </ol>
+        </section>
+        <section>
+            <h2>HTML for Web Development</h2>
+            <p>
+                HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It provides the basic building blocks for web pages, allowing developers to define headings, paragraphs, links, images, lists, and more. HTML uses a system of tags to mark up elements, making it possible for browsers to display content in a structured and accessible way.
+            </p>
+            <ul>
+                <li>Defines the structure and layout of web pages</li>
+                <li>Uses tags such as <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;img&gt;</code></li>
+                <li>Forms the foundation for CSS styling and JavaScript interactivity</li>
+                <li>Ensures content is accessible and readable by both users and search engines</li>
+            </ul>
+        </section>
+        <section>
+            <h2>CSS for Web Development</h2>
+            <p>
+                CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and layout of web pages. It allows developers to apply styles such as colors, fonts, spacing, and positioning to HTML elements, making websites visually appealing and user-friendly.
+            </p>
+            <ul>
+                <li>Separates content (HTML) from presentation (CSS)</li>
+                <li>Uses selectors and properties to target and style elements</li>
+                <li>Enables responsive design for different devices and screen sizes</li>
+                <li>Supports animations, transitions, and advanced visual effects</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Introduction to JavaScript for Interactivity</h2>
+            <p>
+                JavaScript is a versatile programming language that enables interactive and dynamic features on web pages. It allows developers to manipulate HTML and CSS, respond to user actions, and create engaging web experiences.
+            </p>
+            <ul>
+                <li>Adds interactivity such as form validation, animations, and dynamic content updates</li>
+                <li>Can modify the structure and style of web pages in real-time</li>
+                <li>Works alongside HTML and CSS to enhance user experience</li>
+                <li>Supported by all modern web browsers</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Version Control with GIT and GitHub</h2>
+            <p>
+                Version control is a system that helps developers track and manage changes to their code over time. GIT is a popular distributed version control system that allows you to save snapshots of your project, collaborate with others, and revert to previous versions if needed. GitHub is a web-based platform that hosts GIT repositories, making it easy to share code and work together on projects.
+            </p>
+            <ul>
+                <li>Tracks changes and maintains a history of your codebase</li>
+                <li>Facilitates collaboration through branching, merging, and pull requests</li>
+                <li>Enables backup and remote access to code via platforms like GitHub</li>
+                <li>Supports open-source development and code sharing</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Using Microsoft Copilot for Writing HTML, CSS, and JavaScript</h2>
+            <p>
+                Microsoft Copilot is an AI-powered coding assistant that helps developers write code more efficiently. It provides intelligent code suggestions, autocompletes functions, and generates code snippets for HTML, CSS, and JavaScript, streamlining the development process.
+            </p>
+            <ul>
+                <li>Accelerates coding by offering real-time suggestions and code completions</li>
+                <li>Helps reduce errors and improve code quality with context-aware recommendations</li>
+                <li>Supports a wide range of web development languages and frameworks</li>
+                <li>Enhances productivity for both beginners and experienced developers</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
